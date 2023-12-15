@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* font-family: 'Righteous', sans-serif; */
+/* font-family: 'Sarala', sans-serif; */
+/* https://www.behance.net/gallery/140168573/Full-Stack-Developer-Portfolio-Website */
+:root{
+	/* Cores globais */
+	--cor-fundo: #101630;
+	--cor-texto-destaque: #4dbbe1;
+	--cor-texto-pre-titulo: #898c97;
+	--cor-texto-titulo: #fff;
+	--cor-botao-destaque: linear-gradient(90deg, #50abda, #4821bf);
+	--cor-botao-ativo: linear-gradient(90deg, #4821bf, #50abda);
+	--cor-botao-inativo: 1px solid #4348b3;
+	
+	/* Números globais */
+
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Sarala', sans-serif;
+}
+body {
+	background-color: var(--cor-fundo); 
+	padding: 0 5%;
+	color: #fff;
+}
+.cabecalho {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+}
+.cabecalho-imagem {
+	height: 100px;
+}
+.cabecalho-menu {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	width: 75%;
+	justify-content: space-around;
+}
+.cabecalho-menu-item {
+	font-size: 18px;
+	transition: .3s;
+}
+.cabecalho-menu-item:hover {
+	color: var(--cor-texto-destaque);
+	transition: .3s;
+}
+.botao-ativo {
+	background: var(--cor-botao-destaque);
+	padding: 30px 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.botao-ativo:hover {
+	background: var(--cor-botao-ativo);
+	padding: 30px 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.botao-inativo {
+	border: var(--cor-botao-inativo);
+	padding: 30px 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.botao-inativo:hover {
+	border: var(--cor-botao-inativo);
+	background: var(--cor-botao-ativo);
+	padding: 30px 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.conteudo {
+}
+.conteudo-inicio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	height: 100vh;
+	gap: 25px;
+}
+.conteudo-pre-titulo {
+	font-family: 'Righteous', sans-serif;
+	color: var(--cor-texto-pre-titulo);
+}
+.conteudo-titulo {
+	line-height: .9;
+	font-family: 'Righteous', sans-serif;
+	color: var(--cor-texto-titulo);
+	font-size: 100px;
+	font-weight: bold;
+}
+.sobre-mim {
+	display: flex;
+	gap: 50px;
+	padding-bottom: 50px;
+}
+.sobre-mim-imagem {
+	height: 300px;
+	border-radius: 10px;
+}
+.sobre-mim-texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+}
+.sobre-mim-texto-titulo {
+}
+.sobre-mim-texto-paragrafo {
+	text-align: justify;
+}
+.sobre-mim-botoes {
+	display: flex;
+	gap: 20px;
+}

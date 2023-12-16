@@ -6,27 +6,36 @@
 :root{
 	/* Cores globais */
 	--cor-fundo: #101630;
-	--cor-texto-destaque: #4dbbe1;
+	--cor-texto-destaque: #ff6600;
 	--cor-texto-pre-titulo: #898c97;
 	--cor-texto-titulo: #fff;
-	--cor-botao-destaque: linear-gradient(90deg, #50abda, #4821bf);
-	--cor-botao-ativo: linear-gradient(90deg, #4821bf, #50abda);
-	--cor-botao-inativo: 1px solid #4348b3;
+	--cor-botao-destaque: linear-gradient(90deg, #ffd000, #ff6600);
+	--cor-botao-ativo: linear-gradient(90deg, #ff6600, #ffd000);
+	--cor-botao-inativo: 1px solid #ff6600;
 	
 	/* Números globais */
 
 }
+/* Início Efeitos globais */
 * {
 	padding: 0;
 	margin: 0;
 	font-family: 'Sarala', sans-serif;
-	/* cursor:url(https://i.pinimg.com/originals/f3/6d/a9/f36da93324565588e8a274e727fc18d8.png) 10 3, auto; */
-
+	text-decoration: none;
+	color: #fff;
+	cursor:url(./Cursor/normal.cur) 10 3, default;
 }
+*:link {
+	cursor:url(./Cursor/link.cur) 10 3, pointer;
+}
+*:blank {
+	cursor:url(./Cursor/unavailable.cur) 10 3, pointer;
+}
+/* Fim Efeitos globais */
+
 body {
 	background-color: var(--cor-fundo); 
 	padding: 0 5%;
-	color: #fff;
 }
 .cabecalho {
 	width: 100%;
@@ -54,7 +63,7 @@ body {
 }
 .cabecalho-menu-item:hover {
 	color: var(--cor-texto-destaque);
-	transition: .3s;
+	transition: 1s;
 }
 .botao-ativo {
 	background: var(--cor-botao-destaque);

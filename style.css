@@ -20,6 +20,8 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Sarala', sans-serif;
+	/* cursor:url(https://i.pinimg.com/originals/f3/6d/a9/f36da93324565588e8a274e727fc18d8.png) 10 3, auto; */
+
 }
 body {
 	background-color: var(--cor-fundo); 
@@ -30,7 +32,11 @@ body {
 	width: 100%;
 	position: fixed;
 	display: flex;
+	left: 0;
 	justify-content: space-around;
+	background: #10163048;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
 }
 .cabecalho-imagem {
 	height: 100px;

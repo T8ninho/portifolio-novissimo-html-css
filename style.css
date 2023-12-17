@@ -9,6 +9,7 @@
 	--cor-cabecalho: rgba(2, 10, 124, 0.226);
 	--cor-cabecalho-sombra: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	--cor-texto-destaque: #ff6600;
+	--cor-borda-imagem: 10px solid #ff6600;
 	--cor-texto-pre-titulo: #898c97;
 	--cor-texto-titulo: #fff;
 	--cor-botao-destaque: linear-gradient(90deg, #ffd000, #ff6600);
@@ -20,13 +21,17 @@
 }
 /* Início Efeitos globais */
 * {
-	padding: 0;
 	margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 	font-family: 'Sarala', sans-serif;
 	text-decoration: none;
 	color: #fff;
 	cursor:url(./Cursor/normal.cur) 10 3, default;
 	scroll-behavior: smooth;
+    line-height: 1;
+    list-style: none;
 }
 :target {
 	scroll-margin-top: .8em;
@@ -70,7 +75,7 @@ body {
 }
 .cabecalho-menu-item:hover {
 	color: var(--cor-texto-destaque);
-	transition: 1s;
+	transition: .3s;
 }
 .botao-ativo {
 	background: var(--cor-botao-destaque);
@@ -116,7 +121,6 @@ body {
 	color: var(--cor-texto-pre-titulo);
 }
 .conteudo-titulo {
-	line-height: .9;
 	font-family: 'Righteous', sans-serif;
 	color: var(--cor-texto-titulo);
 	font-size: 100px;
@@ -130,6 +134,12 @@ body {
 }
 .sobre-mim-imagem {
 	height: 300px;
+	border-radius: 10px;
+	/* top: -30px; */
+	/* left: -30px; */
+}
+.sobre-mim-borda-imagem {
+	border: var(--cor-borda-imagem);
 	border-radius: 10px;
 }
 .sobre-mim-texto {

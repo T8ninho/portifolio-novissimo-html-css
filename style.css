@@ -51,6 +51,7 @@ body {
 }
 .cabecalho {
 	width: 100%;
+	z-index: 10;
 	position: fixed;
 	display: flex;
 	left: 0;
@@ -132,16 +133,6 @@ body {
 	height: 100vh;
 	align-items: center;
 }
-.sobre-mim-imagem {
-	height: 300px;
-	border-radius: 10px;
-	/* top: -30px; */
-	/* left: -30px; */
-}
-.sobre-mim-borda-imagem {
-	border: var(--cor-borda-imagem);
-	border-radius: 10px;
-}
 .sobre-mim-texto {
 	display: flex;
 	flex-direction: column;
@@ -156,4 +147,27 @@ body {
 .sobre-mim-botoes {
 	display: flex;
 	gap: 20px;
+}
+.imagem-left {
+	height: 300px;
+	border-radius: 10px;
+	position: relative;
+	top: -30px;
+	left: -30px;
+}
+.imagem-right {
+	height: 300px;
+	border-radius: 10px;
+	position: relative;
+	top: -30px;
+	right: -30px;
+}
+.borda-imagem {
+	position: relative;
+	margin: auto;	
+	border: double 5px transparent;
+	border-radius: 10px;
+	background-image: linear-gradient(var(--cor-fundo),var(--cor-fundo)), radial-gradient(circle at top left, #ff6600, #ffd000);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
 }

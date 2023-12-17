@@ -6,6 +6,8 @@
 :root{
 	/* Cores globais */
 	--cor-fundo: #101630;
+	--cor-cabecalho: rgba(2, 10, 124, 0.226);
+	--cor-cabecalho-sombra: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	--cor-texto-destaque: #ff6600;
 	--cor-texto-pre-titulo: #898c97;
 	--cor-texto-titulo: #fff;
@@ -24,7 +26,12 @@
 	text-decoration: none;
 	color: #fff;
 	cursor:url(./Cursor/normal.cur) 10 3, default;
+	scroll-behavior: smooth;
 }
+:target {
+	scroll-margin-top: .8em;
+  }
+
 *:link {
 	cursor:url(./Cursor/link.cur) 10 3, pointer;
 }
@@ -43,8 +50,8 @@ body {
 	display: flex;
 	left: 0;
 	justify-content: space-around;
-	background: #10163048;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	background: var(--cor-cabecalho);
+    box-shadow: var(--cor-cabecalho-sombra);
     backdrop-filter: blur( 13.5px );
 }
 .cabecalho-imagem {
@@ -118,7 +125,8 @@ body {
 .sobre-mim {
 	display: flex;
 	gap: 50px;
-	padding-bottom: 50px;
+	height: 100vh;
+	align-items: center;
 }
 .sobre-mim-imagem {
 	height: 300px;

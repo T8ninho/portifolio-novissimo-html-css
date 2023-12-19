@@ -48,18 +48,24 @@
 
 body {
 	background-color: var(--cor-fundo); 
-	padding: 0 5%;
+	display: flex;
+	justify-content: center;
 }
 .cabecalho {
 	width: 100%;
 	z-index: 10;
 	position: fixed;
 	display: flex;
+	justify-content: center;
 	left: 0;
-	justify-content: space-around;
 	background: var(--cor-cabecalho);
     box-shadow: var(--cor-cabecalho-sombra);
     backdrop-filter: blur( 13.5px );
+}
+.cabecalho-conteudo {
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
 }
 .cabecalho-imagem {
 	height: 100px;
@@ -68,8 +74,8 @@ body {
 	display: flex;
 	gap: 20px;
 	align-items: center;
-	width: 75%;
-	justify-content: space-around;
+	width: 70%;
+	justify-content: space-between;
 }
 .cabecalho-menu-item {
 	font-size: 18px;
@@ -109,6 +115,9 @@ body {
 	text-align: center;
 }
 .conteudo {
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
 }
 .conteudo-inicio {
 	display: flex;
@@ -132,7 +141,9 @@ body {
 	display: flex;
 	gap: 50px;
 	height: 100vh;
+	width: 80vw;
 	align-items: center;
+	justify-content: center;
 }
 .sobre-mim-texto {
 	display: flex;

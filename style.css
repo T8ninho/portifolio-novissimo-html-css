@@ -161,7 +161,7 @@ body {
 	font-size: 100px;
 	font-weight: bold;
 }
-.sobre-mim {
+.sobre-mim-container {
 	display: flex;
 	gap: 50px;
 	height: 100vh;
@@ -169,11 +169,18 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.sobre-mim {
+	display: flex;
+	gap: 50px;
+	width: 80vw;
+	align-items: center;
+	justify-content: space-between;
+}
 .sobre-mim-texto {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 30px;
+	height: 100%;
+	justify-content: space-around;
 }
 .sobre-mim-texto-titulo {
 }
@@ -185,14 +192,14 @@ body {
 	gap: 20px;
 }
 .imagem-left {
-	height: 300px;
+	height: 50vh;
 	border-radius: 10px;
 	position: relative;
 	top: -30px;
 	left: -30px;
 }
 .imagem-right {
-	height: 300px;
+	height: 50px;
 	border-radius: 10px;
 	position: relative;
 	top: -30px;

@@ -161,7 +161,7 @@ body {
 	font-size: 100px;
 	font-weight: bold;
 }
-.sobre-mim-container {
+.sobre-mim {
 	display: flex;
 	gap: 50px;
 	height: 100vh;
@@ -169,18 +169,11 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.sobre-mim {
-	display: flex;
-	gap: 50px;
-	width: 80vw;
-	align-items: center;
-	justify-content: space-between;
-}
 .sobre-mim-texto {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 30px;
 }
 .sobre-mim-texto-titulo {
 }

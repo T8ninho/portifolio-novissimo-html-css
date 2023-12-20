@@ -161,38 +161,72 @@ body {
 	font-size: 100px;
 	font-weight: bold;
 }
-.sobre-mim {
+#sobre-mim {
+	height: 100vh;
+}
+#portifolio {
 	display: flex;
 	gap: 50px;
-	height: 100vh;
-	width: 80vw;
+	flex-direction: column;
+	padding: 50px;
 	align-items: center;
 	justify-content: center;
 }
-.sobre-mim-texto {
+.portifolio-titulo {
+	font-size: 35px;
+	text-transform: uppercase;
+}
+.card {
+	display: flex;
+	gap: 50px;
+	width: 80vw;
+	padding: 50px;
+	align-items: center;
+	justify-content: center;
+}
+.card-texto {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 30px;
 }
-.sobre-mim-texto-titulo {
+.card-texto-titulo-geral {
+	text-transform: uppercase;
+	color: var(--cor-texto-destaque);
 }
-.sobre-mim-texto-paragrafo {
+.card-texto-titulo {
+}
+.card-texto-paragrafo {
 	text-align: justify;
 }
-.sobre-mim-botoes {
+.card-botoes {
 	display: flex;
 	gap: 20px;
 }
+.botao-seta:after {
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    vertical-align: bottom;
+    width: 15px;
+
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
 .imagem-left {
-	height: 50vh;
+	max-height: 30vw;
+	max-width: 30vw;
 	border-radius: 10px;
 	position: relative;
 	top: -30px;
 	left: -30px;
 }
 .imagem-right {
-	height: 50px;
+	max-height: 30vw;
+	max-width: 30vw;
 	border-radius: 10px;
 	position: relative;
 	top: -30px;

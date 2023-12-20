@@ -5,13 +5,14 @@
 /* https://www.behance.net/gallery/140168573/Full-Stack-Developer-Portfolio-Website */
 :root{
 	/* Cores globais */
-	--cor-fundo: #101630;
+	--cor-fundo: #171e47;
 	--cor-cabecalho: rgba(2, 10, 124, 0.226);
 	--cor-cabecalho-sombra: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	--cor-texto-destaque: #ff6600;
 	--cor-borda-imagem: 10px solid #ff6600;
 	--cor-texto-pre-titulo: #898c97;
 	--cor-texto-titulo: #fff;
+	--cor-barra-rolagem: linear-gradient(-180deg, #ffd000, #ff6600);
 	--cor-botao-destaque: linear-gradient(90deg, #ffd000, #ff6600);
 	--cor-botao-ativo: linear-gradient(90deg, #ff6600, #ffd000);
 	--cor-botao-inativo: 1px solid #ff6600;
@@ -33,6 +34,25 @@
 	scroll-behavior: smooth;
     line-height: 1;
     list-style: none;
+}
+/* Estilo da Barra de Rolagem */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Estilo do Polegar da Barra de Rolagem */
+::-webkit-scrollbar-thumb {
+    background: var(--cor-barra-rolagem);
+    border-radius: 6px;
+}
+
+/* Estilo da Trilha da Barra de Rolagem */
+::-webkit-scrollbar-track {
+    background-color: #575757;
+    border-radius: 6px;
+}
+p {
+    line-height: 1.5;
 }
 :target {
 	scroll-margin-top: .8em;
@@ -91,6 +111,7 @@ body {
 	border-radius: 10px;
 	font-size: 18px;
 	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 4px, rgba(0, 0, 0, 0.7) 0px 8px 13px -3px, rgba(0, 0, 0, 0.6) 0px -5px 0px inset;
 }
 .botao-ativo:hover {
 	background: var(--cor-botao-ativo);
@@ -98,6 +119,7 @@ body {
 	border-radius: 10px;
 	font-size: 18px;
 	text-align: center;
+	color: #fff
 }
 .botao-inativo {
 	border: var(--cor-botao-inativo);
@@ -105,6 +127,8 @@ body {
 	border-radius: 10px;
 	font-size: 18px;
 	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 4px, rgba(0, 0, 0, 0.7) 0px 8px 13px -3px, rgba(0, 0, 0, 0.6) 0px -5px 0px inset;
+	
 }
 .botao-inativo:hover {
 	border: var(--cor-botao-inativo);

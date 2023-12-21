@@ -53,6 +53,8 @@
 }
 p {
     line-height: 1.5;
+	font-size: 13px;
+	color: #ffffffbe;
 }
 :target {
 	scroll-margin-top: .8em;
@@ -105,6 +107,7 @@ body {
 .cabecalho-menu-item:hover {
 	color: var(--cor-texto-destaque);
 	transition: .3s;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.253));
 }
 .botao-ativo {
 	background: var(--cor-botao-destaque);
@@ -120,7 +123,7 @@ body {
 	border-radius: 10px;
 	font-size: 18px;
 	text-align: center;
-	color: #fff
+	color: #fff;
 }
 .botao-inativo {
 	border: var(--cor-botao-inativo);
@@ -191,6 +194,11 @@ body {
 	justify-content: center;
 	gap: 30px;
 }
+.card-texto a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .card-texto-titulo-geral {
 	text-transform: uppercase;
 	color: var(--cor-texto-destaque);
@@ -204,18 +212,13 @@ body {
 	display: flex;
 	gap: 20px;
 }
-.botao-seta:after {
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    content: "";
-    display: inline-block;
-    height: 15px;
-    vertical-align: bottom;
-    width: 15px;
-
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+.botao-seta {
+		width: 15px;
+		height: 15px;
+		border: 4px solid #ffffff;
+		border-left: 0;
+		border-top: 0;
+		transform: rotate(315deg);
 }
 .imagem-left {
 	max-height: 30vw;
@@ -245,6 +248,73 @@ body {
 }
 #servicos {
 	display: flex;
+	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	min-height: 100vh;
+	gap: 5vw;
+}
+.serviços-container-card {
+	display: flex;
+	gap: 30px;
+}
+.servicos-card-titulo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.servicos-card-titulo a {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px;
+	color: #ff6600;
+	border-radius: 50px;
+}
+
+.servicos-card {
+	display: flex;
+	gap: 30px;
+	min-width:  20vw;
+	flex-direction: column;
+	align-items: center;
+  	padding: 0.6em 2em;
+  	color: rgb(255, 255, 255);
+  	background: #111;
+  	position: relative;
+  	z-index: 0;
+  	border-radius: 10px;
+  	user-select: none;
+  	touch-action: manipulation;
+}	
+.servicos-card p {
+	text-align: justify;
+}
+
+.servicos-card::before {
+	content: "";
+	background: linear-gradient( 45deg, #00eeff, #0066ff );
+	border: 5px solid #00eeff;
+	position: absolute;
+  	top: -2px;
+  	left: -2px;
+  	background-size: 400%;
+  	z-index: -1;
+  	filter: blur(10px);
+  	width: calc(100% + 4px);
+  	height: calc(100% + 4px);
+  	border-radius: 10px;
+}
+
+.servicos-card::after {
+  	z-index: -1;
+  	content: "";
+  	border: 5px solid #00a2ffb2;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	background: #222;
+  	left: 0;
+  	top: 0;
+  	border-radius: 10px;
 }

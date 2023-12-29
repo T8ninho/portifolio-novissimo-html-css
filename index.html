@@ -4,9 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css" >
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>T8ninho | Portifólio</title>
 </head>
 <body>
+	<script>
+		AOS.init();
+  	</script>
 	<!-- Início Cabeçalho -->
 	<header class="cabecalho">
 		<div class="cabecalho-conteudo">
@@ -26,27 +31,29 @@
 	<!-- Início conteudo Portifólio -->
 	<main class="conteudo">
 		<!-- Início Título -->
-		<section id="inicio" class="conteudo-inicio">
-			<h2 class="conteudo-pre-titulo">Eu sou um</h2>
-			<div>
-				<h1 class="conteudo-titulo">DEV.</h1>
-				<h1 class="conteudo-titulo">FRONT-END</h1>
-			</div>
+		<section id="inicio">
+			<div class="container-inicio">
+				<h2 class="conteudo-pre-titulo">Eu sou um</h2>
+				<div>
+					<h1 class="conteudo-titulo">DEV.</h1>
+					<h1 class="conteudo-titulo">FRONT-END</h1>
+				</div>
 			<a href="#" class="botao-ativo">PROJETOS ANTERIORES</a>
+			</div>
 		</section>
 		<!-- FIM Título -->
 
 		<!-- Início sobre mim -->
 		<section id="sobre-mim" class="card">
-			<div class="borda-imagem">
+			<div  class="borda-imagem"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
 				<img class="imagem-left" src="https://t8ninho.com/static/media/perfil.dcfde05227a2947a7f13.jpg">
 			</div>
-			<div  class="card-texto">
-				<h1 class="card-texto-titulo">SOBRE MIM</h1>
-				<p class="card-texto-paragrafo">Me chamo Antonio Vitor, tenho 23 anos e tenho uma grande paixão por desenvolvimento de sites. Comecei na área apenas com HTML e CSS, atualmente estou estudando JavaScript combinado com algumas frameworks como ReactJS e React Native para tornar ainda mais atrativas minhas criações. Nesta página estão alguns dos meus projetos, fique a vontade para visitar cada um deles.</p>
-				<div class="card-botoes">
-					<a href="#" class="botao-ativo">CONTRATE-ME</a>
-					<a href="#" class="botao-inativo">RESUMO</a>
+			<div class="card-texto">
+				<h1 class="card-texto-titulo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">SOBRE MIM</h1>
+				<p class="card-texto-paragrafo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Me chamo Antonio Vitor, tenho 23 anos e tenho uma grande paixão por desenvolvimento de sites. Comecei na área apenas com HTML e CSS, atualmente estou estudando JavaScript combinado com algumas frameworks como ReactJS e React Native para tornar ainda mais atrativas minhas criações. Nesta página estão alguns dos meus projetos, fique a vontade para visitar cada um deles.</p>
+				<div class="card-botoes" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+					<a href="#" class="botao-ativo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">CONTRATE-ME</a>
+					<a href="#" class="botao-inativo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">RESUMO</a>
 				</div>
 			</div>
 		</section>
@@ -56,7 +63,10 @@
 		<section id="portifolio">
 			<h1 class="portifolio-titulo oculto">Portifólio</h1>
 			<!-- Card 1 -->
-			<div class="card oculto left">
+			<div 
+				class="card" 
+				data-aos="fade-up"
+			>
 				<div  class="card-texto">
 					<h1 class="card-texto-titulo-geral">projeto 1</h1>
 					<h1 class="card-texto-titulo">Galeria de Fotos</h1>
@@ -70,7 +80,10 @@
 				</div>
 			</div>
 			<!-- Card 2 -->
-			<div class="card oculto right">
+			<div 
+				class="card" 
+				data-aos="fade-up"
+			>
 				<div class="borda-imagem">
 					<img class="imagem-left" src="https://t8ninho.com/static/media/SurvivalExtremo-Site.02ce190708eb20a434cd.png">
 				</div>
@@ -84,7 +97,10 @@
 				</div>
 			</div>
 			<!-- Card 3 -->
-			<div class="card oculto left">
+			<div 
+				class="card" 
+				data-aos="fade-up"
+			>
 				<div  class="card-texto">
 					<h1 class="card-texto-titulo-geral">projeto 3</h1>
 					<h1 class="card-texto-titulo">App Lista dos sonhos</h1>
@@ -98,7 +114,10 @@
 				</div>
 			</div>
 			<!-- Card 4 -->
-			<div class="card oculto right">
+			<div 
+				class="card" 
+				data-aos="fade-up"
+			>
 				<div class="borda-imagem">
 					<img class="imagem-left" src="https://t8ninho.com/static/media/BolitosGourmet.d467a601764e60582bea.png">
 				</div>
@@ -123,7 +142,7 @@
 				<div class="servicos-card">
 					<div class="servicos-card-titulo">
 						<a>#</a>
-						<h1>Desenvolvimento de App Desktop</h1>
+						<h1>Desenvolvimento de WebSites</h1>
 					</div>
 					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
 				</div>
@@ -131,10 +150,13 @@
 				<div class="servicos-card">
 					<div class="servicos-card-titulo">
 						<a>#</a>
-						<h1>Desenvolvimento de App Mobile</h1>
+						<h1>Desenvolvimento de Apps Mobile</h1>
 					</div>
 					<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
 				</div>
+			</div>
+			<div class="serviços-container-card">
+				<!-- item 3 -->
 				<div class="servicos-card">
 					<div class="servicos-card-titulo">
 						<a>#</a>
@@ -151,5 +173,4 @@
 		</section>
 	</main>
 </body>
-<script src="script.js"></script>
 </html>
